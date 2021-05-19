@@ -23,7 +23,7 @@ def f(signal):
     step = twopi/N
     x = 0
     for i in range(0, N+1):
-        signal[i] = 30*cos(x*x*x*x)
+        signal[i] = 3
         sigfig.plot(pos=(x, signal[i]))
         x += step
 

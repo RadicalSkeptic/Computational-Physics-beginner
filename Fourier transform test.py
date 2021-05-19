@@ -1,4 +1,5 @@
 from numpy import arange, zeros
+from numpy.lib.function_base import sinc
 import vpython as vp
 import cmath as cm
 
@@ -16,7 +17,8 @@ def y(t):
     # return cm.sin(5*t)+2*cm.cos(3*t)+5*cm.sin(t)
     # return 5+10*cm.sin(t+2)
     # return 7
-    return 3*cm.sin(5*t)+2*cm.sin(3*t)+cm.sin(t)
+    # return 3*cm.sin(5*t)+2*cm.sin(3*t)+cm.sin(t)
+    return sinc(t)
 
 
 Ys = zeros((N+1), complex)
